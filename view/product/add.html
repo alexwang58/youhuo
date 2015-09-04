@@ -1,0 +1,17 @@
+{{define "title"}} {{.title}} {{end}}
+{{define "header"}} <h1>新货</h1> {{end}}
+{{define "content"}}
+<form id="product_create" method="POST" enctype="multipart/form-data" data-ajax="false" action="/product/add">
+<label>商品名</label>
+<input type="string" name="ptitle" id="product_title" value="">
+<label for="price">价格</label>
+<input type="number" name="price" id="product_price" autocomplete="off" value="">
+<input type="FILE" id="picture" name="picture" />
+<div class="ui-input-btn ui-btn ui-btn-b">
+    确定
+	<input type="submit" data-enhanced="true" value="确定" >
+</div>
+{{end}}
+{{define "extrahead"}}{{end}}
+{{define "extrabody"}}{{end}}
+{{define "footer"}}<h4>Page Footer</h4>{{end}}

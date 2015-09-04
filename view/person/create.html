@@ -1,0 +1,19 @@
+{{define "title"}} YouHuo {{end}}
+{{define "header"}} <h1>注册</h1> {{end}}
+{{define "content"}}
+<h1>注册</h1>
+<form id="person_create" method="POST" action="/person/create">
+<label for="number-pattern">手机号</label>
+<input type="number" name="phone" pattern="1[9-0]{10}" id="person_phone" value="">
+
+<label for="password">密码</label>
+<input type="password" name="paswd" id="person_paswd" autocomplete="off" value="">
+<div class="ui-input-btn ui-btn ui-btn-b">
+    注册
+	<input type="submit" data-enhanced="true" value="注册" >
+</div>
+</form>
+{{end}}
+{{define "extrahead"}}{{end}}
+{{define "extrabody"}}{{end}}
+{{define "footer"}}<h4>Page Footer</h4>{{end}}

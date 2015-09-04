@@ -1,0 +1,20 @@
+{{define "main"}}<!DOCTYPE html> 
+<html>
+<head>
+  <title>{{template "title" .}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  {{template "extrahead" .}}
+</head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">{{template "header" .}}</div><!-- /header -->
+      <div role="main" class="ui-content">{{template "content" .}}</div><!-- /content -->
+      <div data-role="footer"><h4>Page Footer</h4></div><!-- /footer -->
+    </div><!-- /page -->
+    {{template "extrabody" .}}
+  </body>
+</html>
+{{end}}
