@@ -53,6 +53,8 @@ func (dbM *DBMongo) FindByObid(objid string, c *mgo.Collection, result interface
 	return dbM.FindOne(c, query, result)
 }
 
+/*
 func (dbM *DBMongo) Update(c *mgo.Collection, condition map[string]interface{}, dset interface{}) error {
 	return c.Find(bson.M(query)).One(result)
 }
+*/
